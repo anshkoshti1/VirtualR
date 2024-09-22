@@ -1,4 +1,5 @@
 import {resourcesLinks, platformLinks, communityLinks} from '../constants/index.jsx'
+// import {NavLink} from 'react-router-dom'
 
 const Footer = () => {
   return (

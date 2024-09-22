@@ -3,6 +3,7 @@ import { useState } from 'react'
 import React from 'react'
 import logo from '../assets/logo.png'
 import { navItems } from '../constants'
+import {NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const[mobileDrawerOpen, setMobileDrawerOpen] = useState(false)
@@ -27,12 +28,12 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <div className='hidden lg:flex justify-center space-x-12 items-center'>
-                    <a href="#" className='py-2 px-3 border rounded-md'>
+                    <NavLink to="/sign-in" className='py-2 px-3 border rounded-md'>
                         Sign In
-                    </a>
-                    <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
+                    </NavLink>
+                    <NavLink to="/sign-up" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
                         Create Account
-                    </a>
+                    </NavLink>
                 </div>
                 <div className='lg:hidden md:flex flex-col justify-end'>
                     <button onClick={toggleNavbar}>
@@ -50,12 +51,12 @@ const Navbar = () => {
                         ))}
                     </ul>
                     <div className='flex space-x-6'>
-                        <a href="#" className='py-2 px-3 border rounded-md'>
+                        <NavLink to="/sign-in" className='py-2 px-3 border rounded-md'>
                             Sign In
-                        </a>
-                        <a href="#" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
-                        Create Account
-                    </a>
+                        </NavLink>
+                        <NavLink to="/sign-up" className='bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md'>
+                            Create Account
+                        </NavLink>
                     </div>
                 </div>
             )} 

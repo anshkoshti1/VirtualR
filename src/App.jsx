@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar"
 import Pricing from "./components/Pricing"
 import Testimonials from "./components/Testimonials"
 import WorkFlow from "./components/WorkFlow"
+import Createacc from "./Navbar/Createacc"
+import Signin from "./Navbar/Signin"
 
 function App() {
 
